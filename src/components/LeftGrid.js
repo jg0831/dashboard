@@ -52,26 +52,36 @@ export default function LeftGrid() {
 
             </Row>
             <Row className='employee-info' align='middle'>
-                <Col span={18} className="employee-info-title" >Employee:NAME</Col>
+                <Col span={18} className="employee-info-title" >Employee: <span className='green-text'>Alex Denver</span></Col>
                 <Col  >    <DatePicker picker="month" />
                 </Col>
             </Row>
             <Row className="employee-info">
                 <Col className='employee-info-left' span={12}>
                     <Row className="employee-info-heading">Total no of bookings</Row>
-                    <Row className="green-border">
-                        <Col>Workstation</Col>
-                        <Col>Meeting Room</Col>
+                    <Row className="green-border employee-info-box">
+                        <Col span={8}>  <Row><Col span={24} className='employee-info-text'>Work Station</Col></Row>
+                            <Row ><Col span={24} className='employee-info-text employee-info-data green-text'>5</Col></Row></Col>
+                        <Col className='vl'></Col>
+                        <Col span={8}>  <Row><Col span={24} className='employee-info-text'>Meeting Room</Col></Row>
+                            <Row ><Col span={24} className='employee-info-text employee-info-data green-text'>22</Col></Row></Col>
+
                     </Row>
                     <Row className="employee-info-heading">Total no of Cancelations</Row>
-                    <Row className="green-border" >                        <Col>Workstation</Col>
-                        <Col>Meeting Room</Col></Row>
+                    <Row className="green-border  employee-info-box" >
+                        <Col span={8}>  <Row><Col span={24} className='employee-info-text'>Work Station</Col></Row>
+                            <Row ><Col span={24} className='employee-info-text employee-info-data red-text'>5</Col></Row></Col>
+                        <Col className='vl'></Col>
+                        <Col span={8}>  <Row><Col span={24} className='employee-info-text'>Meeting Room</Col></Row>
+                            <Row ><Col span={24} className='employee-info-text employee-info-data red-text'>22</Col></Row></Col>
+
+                    </Row>
                 </Col>
                 <Col className='employee-info-right' span={12}>
                     <Row className="employee-info-heading">Employee Department</Row>
-                    <Row className="green-border">asdfasdf</Row>
+                    <Row className="green-border employee-info-box employee-info-status green-text">Sales</Row>
                     <Row className="employee-info-heading">Employee Agility Level</Row>
-                    <Row className="green-border">asdfasdf</Row> </Col>
+                    <Row className="green-border employee-info-box employee-info-status green-text">Zoner</Row> </Col>
             </Row>
         </Col>
 

@@ -40,18 +40,51 @@
   outline-style: groove;
 }
 .employee-info-title {
+  font-size: 20px;
   padding: 3%;
+  font-weight: bolder;
 }
 .employee-info-heading {
   justify-content: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.employee-info-box {
+  display: flex;
+  flex-flow: nowrap;
+  min-height: 150px;
+  justify-content: center;
+  /* text-align: center; */
+}
+.employee-info-text {
+  text-align: center;
+  font-size: 15px;
   font-weight: bold;
+  flex-wrap: nowrap;
+}
+.employee-info-data {
+  padding: 15px;
+}
+.employee-info-status{
+  font-size: 50px;
+}
+.vl {
+  border-left: 2px solid lightgrey;
+  height: 90px;
+  margin:0 10px 0 10px;
+}
+.green-text {
+  color: lightgreen;
+}
+.red-text {
+  color: red;
 }
 .employee-info-left {
   background-color: rgb(73, 68, 68);
   padding: 1%;
   margin-right: 3px;
   border-radius: 10px;
-  min-height: 550px;
+  min-height: 600px;
 }
 .employee-info-right {
   background-color: rgb(73, 68, 68);
@@ -64,12 +97,12 @@
   border: 3px rgb(82, 184, 82) solid;
   border-radius: 10px;
   margin: 15px;
-  padding: 50px;
+  padding: 5%;
 }
 .ant-picker-calendar {
-  padding: 5%;
+  padding-top: 10%;
+  margin-left: 15px;
   border-radius: 10px;
-  margin: 5px;
 }
 .form-container {
   display: flex;
@@ -90,15 +123,15 @@
   border-radius: 10px;
 }
 .all-day {
-  margin: 2% 0 3px 0 ;
+  margin: 2% 0 3px 0;
 }
 .button {
   background-color: rgb(82, 184, 82);
   color: white;
   border-radius: 10px;
   margin: 3px 0 0 5px;
-  width:100%;
-  height:85%;
+  width: 100%;
+  height: 85%;
 }
 
 .map {

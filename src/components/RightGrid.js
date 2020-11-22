@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Calendar, Checkbox, Image, Row, Col, Typography, Select } from 'antd';
-
+import map from '../map.JPG'
 export default function RightGrid() {
     const { Option } = Select;
     function handleChange(value) {
@@ -37,7 +37,7 @@ export default function RightGrid() {
                 <Col span={14}> <Image
                  className='map'
                     width={450}
-                    src="./map.jpg"
+                    src={map}
                 /></Col>
 
             </Row>
